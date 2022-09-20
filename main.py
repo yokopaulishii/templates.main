@@ -16,17 +16,17 @@ def home():
 @app.route("/", methods= ['GET'])
 def index(title):
     if request.method == ['GET']:
-        return render_template(index.html, title=Index})
+        return render_template("index.html", title="Index"})
 
 @app.route("/about", methods= ['GET'])
 def about(title):
     if request.method == ['GET']:
-        return render_template(about.html, title=About})
+        return render_template("about.html", title="About"})
 
 @app.route("/third", methods= ['GET'])
 def third(title):
     if request.method == ['GET']:
-        return render_template(third.html, title=Third})
+        return render_template("third.html", title="Third"})
 
 if __name__=='__main__':
     app.run(debug=True)
