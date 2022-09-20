@@ -1,12 +1,11 @@
 {%extends 'base.html' %}
-<title>{% blocktitle %}Third{% endblock %}</title>
     <body>
         <h1>Hi!</h1>
         <h2>Navigation</h2>
         <ul>
-            <li><a href="/home/{{title.app}}">Home</a></li>
-            <li><a href="/about/{{title.app}}">About</a></li>
-            <li><a href="/index/{{title.app}}">index</a></li>
+            <li><a href="/home/{{Home}}">Home</a></li>
+            <li><a href="/about/{{About}}">About</a></li>
+            <li><a href="/index/{{Index}}">index</a></li>
         </ul>
         {% block content %}
         {% endblock %}
